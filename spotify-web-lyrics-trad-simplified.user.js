@@ -1,13 +1,15 @@
 // ==UserScript==
-// @name         Spotify Lyrics: Trad ⇄ Simplified Toggle
-// @namespace    local.opencc.spotify
-// @version      2.2.0
-// @description  Convert Traditional ⇄ Simplified ONLY for fullscreen lyrics on Spotify with an in-panel toggle. Uses t2cn.js.
+// @name         Spotify Lyrics: Trad ⇄ Simplified
+// @namespace    https://holsoma.github.io/
+// @version      1.1.0
+// @description  Convert Traditional⇄Simplified Chinese lyrics on Spotify fullscreen lyrics page
+// @author       holsoma
+// @license      MIT
 // @match        https://open.spotify.com/*
-// @run-at       document-idle
-// @grant        none
-// @noframes
+// @icon         https://open.spotify.com/favicon.ico
+// @homepageURL  https://github.com/yourname/spotify-lyrics-converter
 // @require      https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/t2cn.js
+// @grant        none
 // ==/UserScript==
 
 (function () {
