@@ -14,7 +14,7 @@
   'use strict';
 
   const LOG      = '[Lyrics ZH Converter]';
-  const SEL_LINE = '[data-testid="fullscreen-lyric"] > div';
+  const SEL_LINE = '[data-testid="lyrics-line"] .MmIREVIj8A2aFVvBZ2Ev';
   const SWEEP_MS = 350;
 
   // --- Converter (T->CN). Revert uses stored originals.
@@ -53,7 +53,7 @@
   let lyricsMO = null, pageMO = null, sweepTimer = null, btn = null;
 
   function hookLyricsObserver() {
-    const host = document.querySelector('[data-testid="fullscreen-lyric"]')?.parentElement;
+    const host = document.querySelector('[data-testid="lyrics-line"]')?.parentElement;
     if (!host) return false;
     if (lyricsMO) lyricsMO.disconnect();
 
@@ -91,7 +91,7 @@
 
   // --- Mount the toggle INSIDE the lyrics container
   function mountToggle() {
-    const container = document.querySelector('[data-testid="fullscreen-lyric"]')?.parentElement;
+    const container = document.querySelector('[data-testid="lyrics-line"]')?.parentElement;
     if (!container) return false;
 
     // Ensure positioning context so our absolute button sits bottom-right of panel
